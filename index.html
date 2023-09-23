@@ -25,14 +25,10 @@
 </head>
 
 <body>
-
-
     <a class="link_to_archviz" href="https://archviz-dakar.com/" target="_blank">
     </a>
 
-
-    <div class="the_blach_hover">
-    </div>
+    <div class="the_blach_hover"></div>
 
     <a-scene id="the_scene" the_scene cursor="rayOrigin: mouse">
 
@@ -103,6 +99,7 @@
             <img id="Scene-51" src="./Style/Images/Scene-51.jpg">
             <img id="Scene-52" src="./Style/Images/Scene-52.jpg">
             <img id="Scene-53" src="./Style/Images/Scene-53.jpg">
+
         </a-assets>
 
         <a-entity laser-controls="hand: left"
@@ -1163,8 +1160,6 @@
                 let Group_to_activate = this.data.Group_to_activate
                 let TheRotation = this.data.The_rotation
                 let The_Arrow = this.el
-                // this.el.setAttribute('color', '#fff')
-                // this.el.setAttribute('opacity', '0.5')
                 this.el.setAttribute('event-set__mouseenter', "scale: 1.1 1.1 1.1 ; opacity : 1;  color: #fff")
                 this.el.setAttribute('event-set__mouseleave', "scale: 0.9 0.9 0.9 ; opacity : 0.5 ;  color: #fff")
                 this.el.addEventListener('click', (theDote) => {
